@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#BCEAC1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="drawable文件实现横向虚线：" />
+
+            <!-- 这里的高度必须大于drawable中设置的虚线宽度 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/imaginary_line"
+                android:layerType="software" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/rl_1"
+            android:layout_marginTop="20dp"
+            android:background="#BCEAC1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="drawable文件实现竖向虚线：" />
+
+            <View
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/vertical_imaginary_line"
+                android:layerType="software" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/rl_2"
+            android:layout_marginTop="20dp"
+            android:background="#BCEAC1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="自定义DividerView实现横向虚线：" />
+
+            <com.tinytongtong.dividerviewdemo.DividerView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="50dp"
+                android:layerType="software"
+                custom:dashGap="4dp"
+                custom:dashLength="1dp"
+                custom:dashThickness="1dp"
+                custom:divider_line_color="#ef5350"
+                custom:divider_orientation="horizontal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/rl_3"
+            android:layout_marginTop="20dp"
+            android:background="#BCEAC1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="自定义DividerView实现竖向虚线：" />
+
+            <com.tinytongtong.dividerviewdemo.DividerView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:layerType="software"
+                custom:dashGap="4dp"
+                custom:dashLength="1dp"
+                custom:dashThickness="1dp"
+                custom:divider_line_color="#ef5350"
+                custom:divider_orientation="vertical" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
