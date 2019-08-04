@@ -16,6 +16,143 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CActivity"
+            android:label="CActivity">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.c" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.c" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DActivity"
+            android:label="DActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.d" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.d" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EActivity"
+            android:label="EActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.e" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.e" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FActivity"
+            android:label="FActivity"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.f" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.f" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GActivity"
+            android:allowTaskReparenting="true"
+            android:label="GActivity">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.g" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.g" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HActivity"
+            android:allowTaskReparenting="true"
+            android:label="HActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.h" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.h" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".IActivity"
+            android:allowTaskReparenting="true"
+            android:label="IActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.i" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.i" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JActivity"
+            android:allowTaskReparenting="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.j" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.j" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
