@@ -139,12 +139,34 @@
         <activity
             android:name=".JActivity"
             android:allowTaskReparenting="true"
+            android:label="JActivity"
             android:launchMode="singleInstance">
             <intent-filter>
                 <action android:name="com.tinytongtong.dividerviewdemo.action.j" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="com.tinytongtong.dividerviewdemo.category.j" />
+
+                <data
+                    android:host="www.tiny.com"
+                    android:mimeType="text/plain"
+                    android:port="8080"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TestExplicitIntentActivity"
+            android:exported="true"
+            android:label="TestExplicitIntentActivity" />
+
+        <activity
+            android:name=".TestExplicitIntent1Activity"
+            android:label="TestExplicitIntent1Activity">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.TestExplicitIntent1Activity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.tinytongtong.dividerviewdemo.category.TestExplicitIntent1Activity" />
 
                 <data
                     android:host="www.tiny.com"

@@ -10,7 +10,6 @@ import android.view.View;
 
 /**
  * @Description: 隐式Intent调用——调起DividerDemo应用的C页面，默认启动模式
- *
  * @Author wangjianzhou@qding.me
  * @Date 2019-08-04 18:24
  * @Version TODO
@@ -22,9 +21,11 @@ public class CActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_c);
-
-        String dataString = getIntent().getDataString();
-        Log.e(TAG, dataString);
+        
+        if (getIntent() != null) {
+            String dataString = getIntent().getDataString();
+            Log.e(TAG, dataString);
+        }
 
         findViewById(R.id.btn_to_main).setOnClickListener(new View.OnClickListener() {
             @Override
