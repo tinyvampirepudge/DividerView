@@ -158,7 +158,6 @@
             android:name=".TestExplicitIntentActivity"
             android:exported="true"
             android:label="TestExplicitIntentActivity" />
-
         <activity
             android:name=".TestExplicitIntent1Activity"
             android:label="TestExplicitIntent1Activity">
@@ -175,6 +174,16 @@
                     android:scheme="http" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".TestImplicitIntentActivity"
+            android:label="TestImplicitIntentActivity">
+            <intent-filter>
+                <action android:name="com.tinytongtong.dividerviewdemo.action.a" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
